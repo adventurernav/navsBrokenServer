@@ -1,7 +1,7 @@
 module.exports = (sequelize, DataTypes) => {
     const Item = sequelize.define('item', {
         itemName: {
-            type: DataTypes.STRING,
+            type: DataTypes.NAME,
             allowNull: false
         },
         url: {
@@ -11,4 +11,3 @@ module.exports = (sequelize, DataTypes) => {
         
     })
     return Item;
-}

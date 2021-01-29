@@ -2,9 +2,9 @@ const jwt = require('jsonwebtoken')
 const User = require('../db').import('../models/userModel')
 
 const validateSession = (req, res, next) => {
-    const token = req.headers.authorization;
+    const token = req.headers;
     if (!token) {
-        return res.status(401).send({auth: false, message: 'Invalid Credentials. Please sign in.'})
+        return res.status(401).send({auth: false, message: 'Invalid Credentials. Please sign in.', challengeHelp: 'What is the conditional checking?'})
     } else {
         jwt.verify(token, process.env.JWT_SECRET, (err, decodeToken) => {
             if (!err && decodeToken) {

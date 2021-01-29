@@ -5,6 +5,9 @@ There are several bugs for you to fix here!
 
 ## Your task is to log in, create an item on your wishlist, update it, view those changes, then delete the item.
 
+#### Untouched files: headers.js, userModel.js, package-lock.json, .gitignore
+#### You will create 1 file and fix 12 bugs in 7 existing files.
+
 ### Technologies
 #### This server is built with: 
 - JavaScript
@@ -72,3 +75,4 @@ Validate Session: Checks the token and returns the user object.
 
 ## Endpoints: 
 [Postman](https://www.getpostman.com/collections/072ac8a3db9482c2ac69)
+

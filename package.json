@@ -2,13 +2,13 @@
   "name": "navsbrokenserver",
   "version": "1.0.0",
   "description": "What's my favorite restaurant? A miSTEAKhouse!",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "dev": "nodemon"
   },
-  "author": "Nav",
+  "author": "George Error Martin",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^1.19.4"

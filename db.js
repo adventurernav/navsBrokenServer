@@ -13,7 +13,6 @@ sequelize.authenticate()
     .catch(err => console.log(err))
 
 User = sequelize.import('./models/userModel');
-Item = sequelize.import('./models/itemModel');
 
 Item.belongsTo(User,{onDelete:'cascade'});
 User.hasMany(Item);

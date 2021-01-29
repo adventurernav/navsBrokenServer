@@ -55,7 +55,7 @@ router.put('/:itemId', (req,res) => {
 
 router.delete('/:id', (req,res) => {
     const thisItem = {where: {
-        id: req.params.id
+        id: req.id
     }}
     Item.findOne(thisItem)
     .then((results,err)=> {

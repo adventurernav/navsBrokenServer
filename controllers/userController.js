@@ -10,7 +10,7 @@ const validateSession = require('../middleware/validateSession');
 router.post('/register', (req,res) => {
     User.create({
         email: req.body.email,
-        password: bcrypt.hashSync(req.body.password, 11),
+        passwordHash: bcrypt.hashSync(req.body.passwordHash, 11),
         admin: req.body.admin,
         firstName: req.body.firstName,
         lastName: req.body.lastName
@@ -107,7 +107,7 @@ router.put('/password', validateSession, (req,res) => {
 ************************************ */
 router.delete('/', validateSession, (req,res) => {
     const thisUser = {where: {
-        id: req.user.id
+        id: user.id
     }}
     User.findOne(thisUser)
     .then((results,err)=> {
