@@ -72,3 +72,6 @@ Validate Session: Checks the token and returns the user object.
 
 ## Endpoints: 
 [Postman](https://www.getpostman.com/collections/072ac8a3db9482c2ac69)
+
+###### Answer Key: 
+[Reveal Your Secrets](https://docs.google.com/document/d/1QZ613_NwXYY61vFrGfdLRttBgxeC-gWkzD0vckOLEXQ/edit?usp=sharing)
