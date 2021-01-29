@@ -6,6 +6,7 @@ const Item = require('../db').import('../models/itemModel')
  ********* GET ITEMS OF WiSHLiST *********
 ************************************ */
 router.get('/', (req,res) => {
+    let userid = req.user.id
     Item.findAll({
         where: {userId: userid},
         order: [['updatedAt', 'DESC']]

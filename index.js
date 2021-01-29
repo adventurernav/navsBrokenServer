@@ -3,7 +3,7 @@ let express = require('express')
 let app = express()
 let sequelize = require('./db');
 
-const item = require('./controllers/wishlistController')
+const wishlist = require('./controllers/wishlistController')
 const user = require('./controllers/userController')
 
 sequelize.sync();
@@ -15,7 +15,7 @@ app.use('/test', (req,res)=>res.send('Test Successful. Prepare to Launch!'))
 
 app.use('/user', user)
 app.use(require('./middleware/validateSession'))
-app.use('/item', item)
+app.use('/wishlist', wishlist)
 
 app.get("*", (req, res)=>{
     res.status(404).send("Sorry, nothing found here");
