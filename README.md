@@ -69,3 +69,6 @@ There are 4 Tables in this database.
 
 ## Middleware: 
 Validate Session: Checks the token and returns the user object. 
+
+## Endpoints: 
+[Postman](https://www.getpostman.com/collections/072ac8a3db9482c2ac69)
