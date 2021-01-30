@@ -34,7 +34,7 @@ Now that we have the server running, we can use postman to access the server.
 
 ## Database Tables:
 
-There are 4 Tables in this database.
+There are 2 Tables in this database.
 
 ### Users
 | Type of Information | (name in Model) | data type |
@@ -48,16 +48,6 @@ There are 4 Tables in this database.
 | Signup Date | (createdAt) | string |
 | Last Change | (updatedAt) | string |
 ---
-
-
-### Packlists
-| Type of Information | (name in Model) | data type |
-|---------------------|-----------------|-----------|
-| ID | (id) | integer |
-| Profile Owner ID | (userId) | integer |
-| Name of Packlist | (title) | string |
-| Creation Date | (createdAt) | string |
-| Last Change | (updatedAt) | string |
 
 
 ### Items
